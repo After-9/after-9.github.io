@@ -1,0 +1,92 @@
+body {
+    background-image: radial-gradient(circle, #625e8c, #655a84, #66577c, #675474, #66516d);
+}
+
+header {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-color: #AF73AD
+}
+
+nav {
+    display:block;
+}
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: auto;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: #AF73AD;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+nav li {
+    border-bottom: solid 2.4px;
+    padding-bottom: 10px;
+    border-color: grey;
+    text-align: center;
+    position: relative;
+
+}
+
+#main-doc {
+position: absolute;
+margin-left: 19%;
+}
+
+p {
+    font-size: 25px;
+}
+
+main li {
+    font-size: 20px;
+}
+
+code {
+    background-color: black;
+    width: 20%;
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1628px) {
+    /* For mobile phones: */
+    #navbar ul {
+      height: 200px;
+    }
+  
+    #navbar {
+      background-color: AF73AD;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 300px;
+      border: none;
+      z-index: 1;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 320px;
+    }
+  }
